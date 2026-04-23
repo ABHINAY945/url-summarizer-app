@@ -66,11 +66,3 @@ Follow these steps to set up the project locally on your machine.
 4. Click **✨ Summarize Content**.
 5. Wait a few seconds for the AI to analyze the content and generate a concise 300-word summary!
 
-## ☁️ Deployment
-
-This app is fully ready to be deployed on **Streamlit Community Cloud**. 
-
-1. Push this repository to GitHub.
-2. Sign in to [share.streamlit.io](https://share.streamlit.io/).
-3. Create a **New App** and select your repository.
-4. Set the Main file path to `app.py` and click **Deploy**.
