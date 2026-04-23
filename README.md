@@ -66,3 +66,9 @@ Follow these steps to set up the project locally on your machine.
 4. Click **✨ Summarize Content**.
 5. Wait a few seconds for the AI to analyze the content and generate a concise 300-word summary!
 
+
+### 🌐 Live Demo
+👉 https://url-summarizer-app-r3mgh7jrewr8rdurssuzjh.streamlit.app/
+
+
+
