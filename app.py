@@ -372,7 +372,13 @@ if summarize_clicked:
             st.success(output_summary)
 
         except Exception as e:
-            st.exception(e)
+            error_msg = str(e)
+            if "RequestBlocked" in error_msg or "blocked by YouTube" in error_msg:
+                st.error("🚫 **YouTube Blocked the Request**\n\nYouTube actively blocks bots and cloud servers (like Streamlit Cloud) from downloading transcripts to prevent spam. This app works perfectly when you run it locally on your computer, but YouTube is blocking this hosted version.\n\n*Try summarizing a website URL instead!*")
+            elif "NoTranscriptFound" in error_msg or "TranscriptsDisabled" in error_msg:
+                st.error("⚠️ **No Transcript Available**\n\nThis YouTube video does not have English captions/transcripts enabled, so the AI cannot read it.")
+            else:
+                st.exception(e)
 
 # ──────────────────────────────────────────────────────────────
 # Footer
